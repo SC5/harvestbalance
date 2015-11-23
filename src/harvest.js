@@ -368,8 +368,12 @@
     });
   }
 
-  $(function() {
+  function removeSubmitButton() {
+    $(".submit-link").remove();
+  }
 
+  $(function() {
+    removeSubmitButton();
     settings().then(function(settings) {
 
       var state = {
